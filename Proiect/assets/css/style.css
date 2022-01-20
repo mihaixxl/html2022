@@ -73,3 +73,145 @@ body {
    #section-a .content-wrap {
        padding: 0 1.5em;
    }
+
+   /*Section A*/
+
+   #section-a {
+       background: #eaeaea;
+       color: #333333;
+       padding-bottom: 2em;
+   } 
+
+   /*Section B*/
+
+   #section-b {
+       padding: 2em 1em 1em;
+   }
+
+   #section-b ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   #section-b li {
+       margin-bottom: 1em;
+       background: #ffffff;
+       color: #333333;
+       width: 33%;
+       float: left;
+   }
+   #section-b li img {
+       min-height: 350px;
+   }
+
+   .card-content {
+       padding: 1.5em;
+   }
+
+   /*Section C*/
+   #section-c {
+       background: #ffffff;
+       color: #333333;
+       padding: 2em;
+   }
+
+   /*Section D /Boxes*/
+
+   #section-d .box {
+       padding: 2em;
+       color: #ffffff;
+   }
+
+   #section-d .box:first-child {
+       background: #2690d4;
+   }
+
+   /*Footer*/
+
+   #main-footer {
+       padding: 2em;
+       background: #000000;
+       color: #ffffff;
+       text-align: center;
+   }
+
+   #main-footer a {
+       color: #2690d4;
+    text-decoration: none;
+   }
+
+   /*Meniu*/
+   
+   nav ul li {
+       display: inline-block;
+       list-style: none;
+       padding: 7px;
+   }
+   nav ul li a {
+       color: #ffffff;
+       font-family: 'Moon Dance', cursive;
+       font-size: 24px;
+       }
+   
+    /* Media Queries */
+
+  @media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #section-a .content-text {
+      columns: 2;
+      column-gap: 2em;
+    }
+
+    #section-a .content-text p {
+      padding-top: 0;
+    }
+
+    .content-wrap,
+    #section-b ul {
+      grid-column: 2/4;
+    }
+
+    .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+
+    #section-b ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #section-b li {
+      width: 31%;
+    }
+  }
+
+
+  /* Formular */
+  #formjob > div{
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px 0px;
+
+  }
+  #formjob label {
+    display: inline-block;
+    width: 20%;
+
+  }
+  #formjob .bt{
+    padding: 20px 30px;
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
