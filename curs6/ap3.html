@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ap3 curs6</title>
+</head>
+<body>
+    <label for="categorie">Orasul</label>
+    <select name="categorie" id="categorie">
+        <option value="0">Selecteaza</option>
+        <option value="bucuresti">Bucuresti</option>
+        <option value="constanta">Constanta</option>
+        <option value="galati">Galati</option>
+        <option value="iasi">Iasi</option>
+        <option value="cluj">Cluj</option>
+        <option value="brasov">Brasov</option>
+    </select> 
+    <br>
+    <label for="cursuri">Cursuri la care doriti sa va inscrieti</label>
+    <select multiple class="form-control" id="cursuri" name="Cursuri[]">
+        <option value="php">PHP</option>
+        <option value="html">HTML</option>
+        <option value="java">JAVA</option>
+        <option value="photoshop">Photoshop</option>
+        <option value="JavaScript">JavaScript  </option>
+        <option value="CSS">CSS</option>
+    </select>
+    <br>
+    <label for="mesaj"> Mesaj</label>
+    <textarea class="mesaj" id="mesaj" name="mesaj" cols="30" rows="10"></textarea>
+    <br>
+    <label for="cv">CV</label>
+    <input type="file" class="form-control-file" name="cv" id="cv"> 
+    <br>
+    <fieldset class="form-group">
+        <legend>Program cursuri</legend>
+    <input type="radio" name="categorie" id="dimineata" checked> dimineata
+    <input type="radio" name="categorie" id="la prinz" disabled> la prinz
+    <input type="radio" name="categorie" id="seara"> seara </fieldset>
+    <br>
+    <br>
+    <input type="checkbox" name="checkbox" checked>
+    <span>Sunt de acord cu <a href="#">termeni si conditii</a></span>
+    <input type="checkbox" name="checkbox">
+    <span>Va abonati la Newsletter</span>
+    <br>
+    <input type="submit" value="Trimite datele"> 
+    
+       
+</body>
+</html>
